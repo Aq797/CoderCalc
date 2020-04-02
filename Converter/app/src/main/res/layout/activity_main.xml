@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lets Play With Numbers"
+        android:textAlignment="center"
+        android:textSize="35dp"
+        android:textColor="@color/brown"
+        android:background="@color/colorPrimary"
+        android:fontFamily="monospace"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="120dp"
+        android:hint="enter number" />
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        android:layout_marginLeft="90dp"
+        >
+        <RadioButton
+            android:id="@+id/d2b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Decimal->Binary"
+            android:fontFamily="monospace"
+            />
+        <RadioButton
+            android:id="@+id/b2d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Binary->Decimal"
+            android:fontFamily="monospace"
+            />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/convert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        android:layout_marginTop="370dp"
+        android:layout_marginLeft="120dp"
+        android:fontFamily="monospace"
+        />
+
+
+    <EditText
+        android:id="@+id/output"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_marginTop="470dp"
+        android:fontFamily="monospace"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:gravity="center_horizontal" />
+
+
+
+
+</RelativeLayout>
